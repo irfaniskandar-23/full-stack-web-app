@@ -34,9 +34,9 @@ namespace student_API.Controllers
         }
 
         [HttpGet]
-        [Route("{Id}")]
+        [Route("{Id:Guid}")]
         [SwaggerResponse((StatusCodes.Status200OK), Type = typeof(IEnumerable<Student>))]
-        public async Task<IActionResult> GetStudentById(Guid Id)
+        public async Task<IActionResult> GetStudentById([FromRoute] Guid Id)
         {
             try
             {
@@ -58,6 +58,7 @@ namespace student_API.Controllers
         {
             try
             {
+                student.studentId = Guid.NewGuid();
                 return StatusCode(StatusCodes.Status200OK, await _student.registerStudent(student));
 
             }
@@ -102,7 +103,7 @@ namespace student_API.Controllers
         }
 
         [HttpPut]
-        [Route("{Id}")]
+        [Route("{Id:Guid}")]
         [SwaggerResponse((StatusCodes.Status200OK), Type = typeof(IEnumerable<Student>))]
         public async Task<IActionResult> UpdateStudent(Guid Id, Student objStudent)
         {
@@ -116,7 +117,7 @@ namespace student_API.Controllers
         }
 
         [HttpDelete]
-        [Route("{Id}")]
+        [Route("{Id:Guid}")]
         public JsonResult deleteStudent(Guid Id)
         {
             try
@@ -129,7 +130,6 @@ namespace student_API.Controllers
             {
                 return new JsonResult(StatusCodes.Status500InternalServerError);
             }
-           
         }
     }
 }

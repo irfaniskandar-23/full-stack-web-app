@@ -1,0 +1,57 @@
+<div class="container my-5">
+    <h3 class="mb-3">Register Student</h3>
+    
+    <form aform="ngForm" (ngSubmit)="addStudent()"  >
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input required type="text" class="form-control" placeholder="Add Name as in NRIC" id="name" name="name" required
+            [(ngModel)] = "addStudentRequest.name"  >
+            
+        </div>
+        
+
+        <div class="mb-3">
+            <label for="matricId" class="form-label">Matric No</label>
+            <input type="text" class="form-control" placeholder="Add your Matric Id" id="matricId"  name="matricId" required
+            [(ngModel)] = "addStudentRequest.matricId">
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control"  placeholder="example@gmail.com" id="email" name="email"
+            [(ngModel)] = "addStudentRequest.email">
+        </div>
+
+         
+        <div class="mb-3">
+            <label for="contact" class="form-label">Contact</label>
+            <input type="text" class="form-control"  placeholder="0164366212" id="contact"  name="contact"
+            [(ngModel)] = "addStudentRequest.contact">
+        </div>
+        
+        <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <select class="form-select" aria-label="Default select example" id="gender"  name="gender" 
+            [(ngModel)] = "addStudentRequest.gender">
+                <option hidden>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <div class="mb-5">
+            <label for="courseName" class="form-label">Course</label>
+            <select class="form-select" aria-label="Default select example"  id="courseName" name="courseName" required="true"
+            [(ngModel)] = "addStudentRequest.courseName">
+                <option hidden>Select Program Course</option>
+                <option value="Software Engineering">SCSJ2134 - Software Engineering</option>
+                <option value="Data Engineering">SCSP2134 - Data Engineering</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary me-md-3">Register</button>
+        <button type="reset" class="btn btn-md btn-outline-danger">Reset</button>
+
+    </form>
+</div>

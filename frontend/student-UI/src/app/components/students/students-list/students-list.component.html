@@ -1,0 +1,28 @@
+<div class="container my-5">
+    <h3 class="mb-3">Students</h3>
+    <table class="table  table-bordered" *ngIf="students && students.length>0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Matric No</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Course</th>
+                 <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students; let count=index ">
+                <td>{{count+1}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.matricId}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.contact}}</td>
+                <td>{{student.courseName}}</td>
+                <td><a [routerLink]="['/student', student.studentId]">view</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!students || students.length<=0">Students Record not Available</p>
+</div>

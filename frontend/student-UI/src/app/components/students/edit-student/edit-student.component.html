@@ -1,0 +1,50 @@
+<div class="container my-5">
+    <h3 class="mb-3"> Student Details</h3>
+    
+    <form aform="ngForm" (ngSubmit)="updateStudent()" >
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Add Name as in NRIC" id="name" name="name" readonly
+            [(ngModel)] = "studentDetails.name" >
+        </div>
+
+        <div class="mb-3">
+            <label for="matricId" class="form-label">Matric No</label>
+            <input type="text" class="form-control" placeholder="Add your Matric Id" id="matricId"  name="matricId"  readonly
+            [(ngModel)] = "studentDetails.matricId">
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control"  placeholder="example@gmail.com" id="email" name="email"
+            [(ngModel)] = "studentDetails.email">
+        </div>
+
+         
+        <div class="mb-3">
+            <label for="contact" class="form-label">Contact</label>
+            <input type="text" class="form-control"  placeholder="0164366212" id="contact"  name="contact"
+            [(ngModel)] = "studentDetails.contact">
+        </div>
+        
+
+        <div class="mb-5">
+            <label for="courseName" class="form-label">Course</label>
+            <select class="form-select" aria-label="Default select example"  id="courseName" name="courseName"
+            [(ngModel)] = "studentDetails.courseName">
+                <option selected>Select Program Course</option>
+                <option value="Software Engineering">SCSJ2134 - Software Engineering</option>
+                <option value="Data Engineering">SCSP2134 - Data Engineering</option>
+            </select>
+        </div> 
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button class="btn btn-primary btn-md  me-md-2" type="submit">Save</button>
+            <button class="btn btn-outline-danger" (click)="deleteStudent(studentDetails.studentId)" type="button">Delete</button>
+        </div>
+
+         <!-- <button type="submit" class="btn btn-md btn-primary mx-3">Save</button>
+         <button type="button" class="btn btn-md btn-outline-danger">Delete</button> -->
+    </form>
+</div>
