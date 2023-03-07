@@ -62,8 +62,14 @@ The Students  table will be created in the SQL Server database
  <br /> <br />
  
  ## Frontend
- Frontend is developed with Angular version 14.2.10. To install Angular with version, execute the following command
+ Angular application is developed with Angular version 14.2.10. To install Angular with version, execute the following command
  
- 
+ ```
  npm install -g @angular/cli@14.2.10.
+ ```
  
+ To execute the angular application,navigate to the application directory and execute following command
+ 
+ ````
+ ng serve --o
+ ````
