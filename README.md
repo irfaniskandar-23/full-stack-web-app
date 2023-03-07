@@ -72,7 +72,9 @@ The Students  table will be created in the SQL Server database
  ```
  Create Angular Project
  
- 
+ ````
+ ng new student-UI
+ ````
  
  To Run the angular application,navigate to the application directory and execute following command
  
