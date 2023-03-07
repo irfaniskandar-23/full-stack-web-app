@@ -12,11 +12,9 @@ git clone https://github.com/irfaniskandar-23/full-stack-web-app.git
 ```
  **Note that the backend and frontend are in seperated direcotries** 
  
- <br /><br />
+ <br />
  
- 
- 
-#### Backend
+### Backend
 the Backend for this  project is develpoed with ASP.Net Core Web API (.Net 6.0). The API can be monitor in Swagger UI or Postman.
 This project uses Microsoft SQL Server Database and Entity Framework Code First Approach. Following are the steps to setup the database
 
