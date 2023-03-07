@@ -1,0 +1,6 @@
+C:\Users\irfan\Desktop\fullStack\backend\studentApiTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\irfan\Desktop\fullStack\backend\studentApiTest\obj\Debug\net6.0\studentApiTest.csproj.AssemblyReference.cache
+C:\Users\irfan\Desktop\fullStack\backend\studentApiTest\obj\Debug\net6.0\studentApiTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irfan\Desktop\fullStack\backend\studentApiTest\obj\Debug\net6.0\studentApiTest.AssemblyInfoInputs.cache
+C:\Users\irfan\Desktop\fullStack\backend\studentApiTest\obj\Debug\net6.0\studentApiTest.AssemblyInfo.cs
+C:\Users\irfan\Desktop\fullStack\backend\studentApiTest\obj\Debug\net6.0\studentApiTest.csproj.CoreCompileInputs.cache
