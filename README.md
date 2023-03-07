@@ -2,13 +2,18 @@
 
 ##  Project Background
   This is a Full Stack Web Application Program developed with ASP. Net Core API and Angular. This project implements the CRUD operation on the API Resource,
-   a [Student](https://github.com/irfaniskandar-23/full-stack-web-app/blob/main/backend/student%20API/Models/Student.cs) Model. 
+   a [Student](https://github.com/irfaniskandar-23/full-stack-web-app/blob/main/backend/student%20API/Models/Student.cs) Model.
+   The developed with .Net Core will be consumed by the Angular Application
    
    1) ASP.NET Core API is used to developed the students API as follows:
    
-   
+
+<img src="https://user-images.githubusercontent.com/59824144/223435104-acf189a7-72f3-4772-9036-3060c5085f0e.png" width="1000" height="400">
   
-   
+  
+  2) Angular Application Consuming the Backend API
+
+   <img src="https://user-images.githubusercontent.com/59824144/223436621-48710956-3b60-49a3-a788-24ce72eb6ec4.png" width="1000" height="400">
    
 
 
