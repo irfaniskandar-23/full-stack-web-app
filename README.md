@@ -18,7 +18,9 @@ git clone https://github.com/irfaniskandar-23/full-stack-web-app.git
 the Backend for this  project is develpoed with ASP.Net Core Web API (.Net 6.0). The API can be monitor in Swagger UI or Postman.
 This project uses Microsoft SQL Server Database and Entity Framework Code First Approach. Following are the steps to setup the database
 
-1. Install Dependencies
-
+In Visual Studio, install these dependencies for the project to work as expected
+1. Entity Framework Core Sql Server
+2. Entity Framework core Tools
+3. Swashbuckle.AspNetCore.Annotations
 
 
