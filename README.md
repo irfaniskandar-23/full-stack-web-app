@@ -10,7 +10,9 @@ To clone this repo, execute following command
 ```
 git clone https://github.com/irfaniskandar-23/full-stack-web-app.git
 ```
- **Note that the backend and frontend are in seperated direcotries**
+ **Note that the backend and frontend are in seperated direcotries** 
+ 
+ <br /><br />
  
  
  
