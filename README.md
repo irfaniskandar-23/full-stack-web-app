@@ -3,21 +3,21 @@
 ##  Project Background
   This is a Full Stack Web Application Program developed with ASP. Net Core API and Angular. This project implements the CRUD operation on the API Resource,
    a [Student](https://github.com/irfaniskandar-23/full-stack-web-app/blob/main/backend/student%20API/Models/Student.cs) Model.
-   The developed with .Net Core will be consumed by the Angular Application
-    <br />
+   The Student API developed with .Net Core will be consumed by the Angular Application
+   
+   <br />
    
    1) ASP.NET Core API is used to developed the students API as follows:
+   <img src="https://user-images.githubusercontent.com/59824144/223435104-acf189a7-72f3-4772-9036-3060c5085f0e.png" width="1000" height="400">
+  
+   <br />  <br />
+   
+  2) Angular Application Consuming the Student API
+  <img src="https://user-images.githubusercontent.com/59824144/223436621-48710956-3b60-49a3-a788-24ce72eb6ec4.png" width="1000" height="300">
    
 
-<img src="https://user-images.githubusercontent.com/59824144/223435104-acf189a7-72f3-4772-9036-3060c5085f0e.png" width="1000" height="400">
+  <br />
   
-  
-  2) Angular Application Consuming the Backend API
-
-   <img src="https://user-images.githubusercontent.com/59824144/223436621-48710956-3b60-49a3-a788-24ce72eb6ec4.png" width="1000" height="400">
-   
-
-
 To clone this repo, execute following command
    
 ```
@@ -58,3 +58,12 @@ Once the connection string is setup, now is the time to migrate the models into 
 > *Note: remove existing migration folder before executing the above command*
 
 The Students  table will be created in the SQL Server database
+
+ <br /> <br />
+ 
+ ## Frontend
+ Frontend is developed with Angular version 14.2.10. To install Angular with version, execute the following command
+ 
+ 
+ npm install -g @angular/cli@14.2.10.
+ 
