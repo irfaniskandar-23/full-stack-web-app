@@ -23,7 +23,7 @@ To clone this repo, execute following command
 ```
 git clone https://github.com/irfaniskandar-23/full-stack-web-app.git
 ```
- *Note that the backend and frontend projcets are in seperated directories*
+ *Note that the backend and frontend projects are in seperated directories*
  
  <br />
  
